@@ -1,6 +1,6 @@
 {
   "name": "flow-weaver",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Flow Weaver plugin for Claude Code - skills, commands, and hooks for visual workflow development",
   "author": {
     "name": "Ricardo José Horta Morais (Synergenius)"
