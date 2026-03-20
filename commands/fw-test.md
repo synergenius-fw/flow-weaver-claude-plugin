@@ -39,7 +39,7 @@ Then test export:
    // test-runner.ts
    import { $1 } from './<basename>';
 
-   const params = $2 ? JSON.parse('$2') : {};
+   const params = $2 ? JSON.parse($2) : {};
    const result = await $1(true, params);
    console.log('Result:', JSON.stringify(result, null, 2));
    ```

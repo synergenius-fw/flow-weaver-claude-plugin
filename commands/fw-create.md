@@ -72,7 +72,7 @@ Then use `fw_modify` or `fw_modify_batch` to adjust:
    - Next steps:
      - Customize TODO comments with actual logic
      - Run `flow-weaver compile <file>` to generate executable
-     - Test with `fw_execute_workflow` tool
+     - Test with `fw_debug_workflow` tool or `/fw-test`
 
 ## Available Templates
 

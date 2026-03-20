@@ -10,6 +10,11 @@ First, use the Skill tool to invoke:
 
 Then export to Inngest: $ARGUMENTS
 
+**Prerequisite**: The Inngest target pack must be installed:
+```bash
+npm install @synergenius/flow-weaver-pack-inngest
+```
+
 ## 1. Validate the workflow
 
 ```bash
@@ -49,13 +54,13 @@ flow-weaver compile <workflow-file> --target inngest
 
 ### Deep export (compile target with durable steps)
 ```bash
-flow-weaver compile <workflow-file> --target inngest
+flow-weaver compile <workflow-file> --target inngest --durable-steps
 ```
 This generates `<workflow-file>.inngest.ts` with per-node `step.run()` calls.
 
 ### Bundle export (full deployment package)
 ```bash
-flow-weaver export <workflow-file> --target inngest --output-dir ./deploy/inngest --durable-steps
+flow-weaver export <workflow-file> --target inngest --output ./deploy/inngest --durable-steps
 ```
 
 ## 4. Verify the generated output
